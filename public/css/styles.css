@@ -216,16 +216,40 @@ body{
     width: calc(90% - 35.2px);
     margin: 0 auto;
 
+    padding-bottom: 2em;
+
 }
 
-h1{
+.americans h1{
     /* display: block; */
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-
+    
     font-size: 28px;
     margin-top: 0;
     line-height: 130%;
+}
+
+
+
+.americans ul li{
+    /* list-style-type: none; */
+    text-align: left;
+    padding-left: 4px;
+    margin-top: 1em;
+}
+
+.americans ul li::marker{
+    content: url(../img/arrow.svg);
+    height: 15px;
+    width: 15px;
+}
+
+
+    /* Using the background-image and
+       its related properties to add
+       the SVG content */
+    background-image: url('../img/arrow.svg');
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
+    display: block;
 }

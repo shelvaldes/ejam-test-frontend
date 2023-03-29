@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    color: #323232;
+    background-color: white;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/*---------------------Header*/
+.header-main{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    width: calc(100% - 17.6px);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo--wrapper{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 17.6px;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag--wrapper{
+    
+    display: flex;
+    align-items: center;
+}
+
+.mexico-flag{
+    background-image: url(https://checkout.sleepdreamdeep.com/suteradreamdeepfbshop4str/img/flag_sprite.png);
+    background-position: 0 -7896px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 56px;
+    width: 56px;
+
+    margin-left: 17.6px;
+    margin-right: 17.6px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+
+.support-mail{
+    max-width: 100%;
+}
+
+.support-mail img {
+    height: 56px;
+}
+
+.ssl-img{
+    display: none;
+}
+
+.support-mail{
+    display: none;
+}
+
+.spacer{
+    display: none;
+}

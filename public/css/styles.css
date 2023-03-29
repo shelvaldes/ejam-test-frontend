@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -9,7 +12,7 @@ body{
     margin: 0;
     font-family: "Noto Sans", sans-serif;
     color: #323232;
-    background-color: white;
+    background-color: whitesmoke;
     -webkit-font-smoothing: subpixel-antialiased;
     text-align: center;
     overflow: auto;
@@ -17,14 +20,19 @@ body{
     max-width: 100%;
 }
 
-/*---------------------Header*/
+
+
+/*---------------------Header-------------------------*/
+
+
 .header-main{
     height: 80px;
     background-color: white;
     display: flex;
-    width: calc(100% - 17.6px);
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 8px 0 8px;
     display: flex;
     align-items: center;
 }
@@ -84,4 +92,85 @@ body{
 
 .spacer{
     display: none;
+}
+
+/*------------------------Americans are using & carousel---------------------*/
+
+.americans--dotted-line{
+    margin: 10px;
+    background-color: white;
+    border-color: rgb(50, 50, 50);
+    border-style: dashed;
+}
+
+.carousel {
+    position: relative;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    max-height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .carousel--slider-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+.slide-move{
+    display: none;
+}
+
+  .carousel--slide {
+    width: 100%;
+    height: auto;
+    
+  }
+
+.carousel--btn-prev,
+.carousel--btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  color: #fff;
+  transition: all .2s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  z-index: 4;
+  filter: drop-shadow(0 2px 2px #1a1a1a);
+
+}
+
+.carousel--btn__size{
+    width: 56px;
+    height: 175px;
+    padding: 50px 10px;
+}
+
+.carousel--btn-prev {
+  left: 0;
+}
+
+.carousel--btn-next {
+  right: 0;
 }

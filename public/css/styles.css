@@ -122,10 +122,15 @@ body{
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    padding-top: 40px;
   }
 
 .slide-move{
     display: none;
+}
+
+.slide-move:first-child{
+    display:block
 }
 
   .carousel--slide {
@@ -141,6 +146,7 @@ body{
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
+  margin-top: -40px;
 
   fill: none;
   stroke: currentcolor;
@@ -173,4 +179,53 @@ body{
 
 .carousel--btn-next {
   right: 0;
+}
+
+.thumbnail-wrapper{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    text-align: center;
+    transition: transform .45s ease-out;
+    white-space: nowrap;
+}
+
+.thumbnail{
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+    margin-right: 8px;
+}
+
+.thumbnail-1{
+    background-image: url(https://d3hlrrbqydii6y.cloudfront.net/img/b8389f397102c63af7d868c2356f5ca1.jpeg);
+}
+.thumbnail-2{
+    background-image: url(https://d3hlrrbqydii6y.cloudfront.net/img/0b44e16c0b8ef031c3caebc8192b1021.jpeg);
+}
+.thumbnail-3{
+    background-image: url(https://d3hlrrbqydii6y.cloudfront.net/img/099c11c56e0caeefe74478538af79063.jpeg);
+}
+.thumbnail-4{
+    background-image: url(https://d3hlrrbqydii6y.cloudfront.net/img/dc1f0f96644384b0ddeac69195499ca1.jpeg);
+}
+
+
+.americans{
+    display: block;
+    width: calc(90% - 35.2px);
+    margin: 0 auto;
+
+}
+
+h1{
+    /* display: block; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    font-size: 28px;
+    margin-top: 0;
+    line-height: 130%;
 }

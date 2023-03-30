@@ -24,10 +24,12 @@ body{
 
 /*---------------------Header-------------------------*/
 
-
+.header--container{
+    width: 100%;
+    background-color: #fff;
+}
 .header-main{
     height: 80px;
-    background-color: white;
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -213,7 +215,7 @@ body{
 
 .americans{
     display: block;
-    width: calc(90% - 35.2px);
+    width: calc(90% - 2em);
     margin: 0 auto;
 
     padding-bottom: 2em;
@@ -226,30 +228,25 @@ body{
     font-size: 28px;
     margin-top: 0;
     line-height: 130%;
+    padding-bottom: 1em;
 }
 
-
+.americans ul{
+    
+}
 
 .americans ul li{
     /* list-style-type: none; */
     text-align: left;
     padding-left: 4px;
     margin-top: 1em;
+    list-style: none;
+    display: flex;
 }
 
-.americans ul li::marker{
+.americans ul li::before{
+    height: 15px;
+    width: 15px;
     content: url(../img/arrow.svg);
-    height: 15px;
-    width: 15px;
-}
-
-
-    /* Using the background-image and
-       its related properties to add
-       the SVG content */
-    background-image: url('../img/arrow.svg');
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: block;
+    margin-right: 4px;
 }
